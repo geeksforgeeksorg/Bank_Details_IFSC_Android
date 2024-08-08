@@ -108,7 +108,9 @@ public class MainActivity extends AppCompatActivity {
                     String city = response.optString("CITY");
                     // after extracting this data we are displaying
                     // that data in our text view.
-                    bankDetailsTV.setText("Bank Name : " + bankName + "\n\nBranch : " + branch + "\n\nAddress : " + address + "\n\nMICR Code : " + micrcode + "\n\nCity : " + city + "\n\nState : " + state + "\n\nContact : " + contact);
+                    bankDetailsTV.setText("Bank Name : " + bankName + "\n\nBranch : "
+                            + branch + "\n\nAddress : " + address + "\n\nMICR Code : "
+                            + micrcode + "\n\nCity : " + city + "\n\nState : " + state + "\n\nContact : " + contact);
                 } catch (Exception e) {
                     // if we get any error while loading data
                     // we are setting our text as invalid IFSC code.
